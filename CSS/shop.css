@@ -1,0 +1,157 @@
+/*商城二级界面*/
+.top{
+    left: 10px;
+}
+#header{
+    display: block;
+}
+#footer .next{
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    display: none;
+}
+#footer .next:hover{
+    opacity: 1;
+    transform-origin:center ;
+    animation: sigma 1s;
+}
+#footer .next img{
+    width: 100%;
+}
+.shop-page{
+    width: 100%;
+    /*    background-color: #5bc0de;*/
+    display: block;
+}
+.shop-page-title{
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: rgba(39, 41, 50, 0.91);
+}
+.shop-page-title p{
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 18pt;
+}
+.column{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.shop-page-small{
+    width: 100%;
+    display: block;
+    background-color: rgba(195, 198, 195, 0.6);
+    border-right: 0.1px solid rgba(171, 174, 171, 0.4);
+    margin-top: 15px;
+    transition: all.4s;
+}
+#small-pic-hot{
+    margin-top: 0;
+}
+#small-pic-hot:hover{
+    background-color: white;
+    animation: sigmb 0s;
+}
+.shop-page-hot{
+    width: 100%;
+    display: block;
+    background-color: rgba(195, 198, 195, 0.6);
+    border: 0.1px solid rgba(171, 174, 171, 0.4);
+    transition: all.4s;
+
+}
+.shop-page-hot-pic{
+    width: 100%;
+    display: block;
+}
+.shop-page-hot-pic img{
+    width: 100%;
+    border: 0;
+}
+.shop-page-hot:hover{
+    background-color: white;
+}
+.shop-page-small-pic{
+    width: 100%;
+    height:80px;
+    /* background-color: #2b542c;*/
+    display: block;
+}
+.shop-page-small-text{
+    width: 100%;
+    height:80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display:block;
+}
+.shop-page-small-text p{
+    line-height: 80px;
+    text-align: center;
+    font-size: 14pt;
+}
+.shop-page-small:hover{
+    opacity: 1;
+    transform-origin:center ;
+    animation: sigmb 1s;
+
+}
+@-webkit-keyframes sigmb {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+}
+
+#content-1{
+    width: 100%;
+    background: url(../images/shop4.jpg);
+    padding: 0px 0px 0px 0px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    float: left;
+}
+#content-2{
+    width: 100%;
+    background: url(../images/shop2.jpg);
+    padding: 0px 0px 0px 0px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    float: left;
+}
+#content-3{
+    width: 100%;
+    background: url(../images/shop1.jpg);
+    padding: 0px 0px 0px 0px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    float: left;
+}
+#content-4{
+    width: 100%;
+    background: url(../images/shop7.jpg);
+    padding: 0px 0px 0px 0px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    float: left;
+}
+#content-5{
+    width: 100%;
+    background: url(../images/shop8.jpg);
+    padding: 0px 0px 0px 0px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    float: left;
+}
+

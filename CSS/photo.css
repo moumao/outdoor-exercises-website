@@ -1,0 +1,94 @@
+/*摄影二级界面*/
+@-webkit-keyframes sigma {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.4);
+    }
+}
+#header-pic{
+    z-index: 999;
+    height: 20px;
+    background: url(../images/header-pic.jpg);
+    padding: 0px 0px 0px 0px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+
+
+}
+#header-pic .cover{
+    width: 100%;
+    margin-top: 0;
+    color: white;
+    float: right;
+    padding: 50px 70px;
+    display: inline-block;
+}
+#header-pic .cover h1{
+    text-align: right;
+    float: right;
+}
+#header-pic .message{
+    display: block;
+    width: 100%;
+    height: 70px;
+    float: right;
+    /*     margin-top: 300px;*/
+    padding: 0px 70px;
+    position: relative;
+
+}
+#header-pic p{
+    color: white;
+    text-align: right;
+}
+#header-pic .message #author{
+    margin-bottom: 0;
+}
+#header-pic .message #title{
+    font-size: 20pt;
+}
+#header-pic .message .icon{
+    width:50px ;
+    height: 50px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+#header-pic .message .icon img{
+    width: 100%;
+}
+#header-pic .message .icon a{
+    text-decoration: none;
+}
+#header-pic .message:hover .icon{
+    opacity: 1;
+    transform-origin:center ;
+    animation: sigma 1s;
+}
+#text{
+    display: none;
+}
+.photo-text{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    box-shadow: rgba(122, 122, 122, 0.5) 5px 5px 3px;
+    margin: 30px 0 15px 0;
+}
+.photo-btn{
+
+    border-radius: 0px;
+    height:30px;
+    margin: 5px 5px;
+    border: 0;
+}

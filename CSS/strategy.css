@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body a{
+    outline:none;
+    text-decoration: none;
+    color: black;
+}
+.strategy-search{
+    width: 100%;
+    height: 450px;
+    display: block;
+    background-color: #1b6d85;
+
+    background: url(../images/strategy-title.jpg);
+    padding: 0px 0px 0px 0px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index: 0;
+    position: relative;
+}
+.strategy-search-box{
+    width: 500px;
+    height: 120px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -250px;
+    display: block;
+}
+.strategy-search-box-title{
+    width: 100%;
+    height: 60px;
+    display: block;
+}
+.strategy-search-box-title h2{
+    margin: 0;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 30px;
+}
+.strategy-search-box-input{
+    width: 100%;
+    margin: 10px 0 10px;
+    height: 40px;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.strategy-search-box-input input{
+    margin-left: 10px;
+    height: 40px;
+    border: 0;
+    outline:none;
+}
+.strategy-search-box-input-img{
+    width: 40px;
+    height: 40px;
+    float: right;
+    padding: 5px;
+}
+.strategy-search-box-input-img button{
+    background-color: white;
+    border: 0px;
+}
+.strategy-search-box-input-img img{
+    width: 100%;
+}
+
+.strategy-nav{
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin: 35px 50px 0 0;
+    border-bottom: 0.5px solid rgba(171, 174, 171, 0.4);
+}
+.strategy-nav-ul{
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    margin-right: 50px;
+    list-style: none;
+    border-bottom: 0.5px solid rgba(171, 174, 171, 0.4);
+}
+.strategy-nav-ul li{
+    width: 50%;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+    font-size: 15px;
+}
+.strategy-nav-ul li ul{
+    width: 430px;
+    min-width: 100px;
+    position: relative;
+    top:0;
+    padding: 10px;
+    float: left;
+}
+.strategy-nav-ul li ul li{
+    float: left;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 0;
+}
+.strategy-nav-ul li ul li a{
+    line-height: 50px;
+    padding: 0;
+}
+.strategy-nav-ul li ul li a:hover{
+    background-color: white;
+}
+.strategy-nav h4{
+    margin: 0;
+    line-height: 50px;
+    float: left;
+    font-size: 20px;
+}
+.strategy-city-title{
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin: 0 50px 0 0;
+    border-bottom: 0.5px solid rgba(171, 174, 171, 0.4);
+}
+.strategy-city-title h4{
+    margin: 0;
+    line-height: 50px;
+    float: left;
+}
+.strategy-city-hot{
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin-right: 50px;
+    border-bottom: 0.5px solid rgba(171, 174, 171, 0.4);
+    transition: all.4s;
+}
+.strategy-city-hot:hover{
+    background-color: white;
+}
+.strategy-city-hot p{
+    line-height: 50px;
+    font-size: 15px;
+    display: block;
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+}
+.strategy-title{
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin: 35px;
+    border-bottom: 0.5px solid rgba(171, 174, 171, 0.4);
+}
+.strategy-title h4{
+    margin: 0;
+    line-height: 50px;
+    float: left;
+    font-size: 20px;
+}
+.strategy-page{
+    width: 100%;
+    margin: 35px;
+    height: 405px;
+    padding: 15px;
+    transition: all.4s;
+}
+.strategy-page:hover{
+    background-color: white;
+}
+.strategy-page-title{
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+.strategy-page-title h3{
+    line-height: 50px;
+    display: block;
+    margin: 0;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin-right: 30px;
+    font-size: 20px;
+}
+.strategy-page-text{
+    width: 100%;
+    height: 100px;
+    display: block;
+    padding-bottom: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #444653;
+    padding-right: 80px;
+}
+.strategy-page-img{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+.strategy-page-img-box{
+    width: 33.333333333%;
+    height: 200px;
+    float: left;
+    overflow:hidden;
+    align: center;
+}
+.strategy-page-img-box img{
+    width: auto;
+    height: 100%;
+    min-width: 100%;
+}
+.strategy-page-footer{
+    width: 100%;
+    height: 20px;
+    display: block;
+    margin-top: 5px;
+}
+.strategy-page-footer-img{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    margin-left: 8px;
+}
+.strategy-page-footer-img img{
+    width: 100%;
+}
+.strategy-page-footer a{
+    margin-left: 8px;
+    float: right;
+    color:#707070;
+    line-height: 20px;
+}

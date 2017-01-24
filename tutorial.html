@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tutorial</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/tutorial.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="JS/jquery-3.1.0.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/style.js"></script>
+    <script src="layui/layui.js"></script>
+    <style type="text/css">
+    </style>
+
+</head>
+<body>
+<div class="loader">
+    <div class="loader-content">
+        <img src=images/11.gif alt="Loader" class="loader-loader" />
+    </div>
+</div>
+<section id="header">
+    <header>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-6 column" id="header-l">
+                    <p>欢迎来到Endless</p>
+                    <p>请</p>
+                    <p><a href="#">登陆</a></p>
+                    <p><a href="#">注册</a></p>
+                </div>
+                <div class="col-md-6 column" id="header-r">
+                    <p><a href="#">退出</a></p>
+                    <p><a href="#">用户名</a></p>
+                    <div id="head-pic"><a href="#" ><img alt="" src="images/touxiang.jpg.png" /></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+</section>
+<section id="nav">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column" style="padding-left: 0px;padding-right: 0px;">
+                <div class="title-main-name" style="margin-top: 60px;">
+                    <div class="title-main-name-c" style="padding-left: 15px;">
+                        <a href="index.html">  <p style="font-size: 20pt;float: left">教程</p></a>
+                    </div>
+                    <button type="button" class="btn btn-default photo-btn">全部教程</button>
+                    <button type="button" class="btn btn-default photo-btn">XX教程</button>
+                    <button type="button" class="btn btn-default photo-btn">XX教程</button>
+                    <button type="button" class="btn btn-default photo-btn">XX教程</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row clearfix tutorial-row" id="tutorial-box"></div>
+</div>
+<section id="footer">
+    <footer>
+        <div class="top"><a href="#nav" id="top-button" onfocus="this.blur();"><img src="images/返回顶部.png"></a></div>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-6 column" id="footer-l">
+                    <p>版权所有&nbsp;©&nbsp;Endless技术有限公司&nbsp;&nbsp;1998-2016&nbsp;&nbsp;保留一切权利</p>
+                </div>
+                <div class="col-md-6 column" id="footer-r">
+                    <ul>
+                        <li><a href="#">法律声明</a> </li>
+                        <li><a href="#">隐私保护</a> </li>
+                        <li><a href="#">联系我们</a> </li>
+                        <li><a href="#">网站地图</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+<script type="text/javascript">
+    layui.use('flow',function () {
+        var $ = layui.jquery;
+        var flow = layui.flow;
+        flow.load({
+            elem: '#tutorial-box' //流加载容器
+            ,done: function(page, next){ //执行下一页的回调
+                /* var lis = [];
+                 //注意：page是从2开始返回
+                 $.get('/api/list?page='+page, function(res){
+                 //假设列表返回在data集合中
+                 layui.each(res.data, function(index, item){
+                 lis.push('<div class="strategy-page">'+ ' <a href="#"  onfocus="this.blur();">'+'</a>' +'</div>');
+                 });
+
+                 //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
+                 //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
+                 next(lis.join(''), page < 10); //假设总页数为 10
+                 }, 500);*/
+                setTimeout(function(){
+                    var lis = [];
+                    for(var i = 0; i < 12; i++){
+                        lis.push('<div class="col-md-4 column"> <div class="tutorial-small"><img src="images/tutorial-1.jpg"> <a href="#"> <span class=" tutorial-title">教程标题</span></a> </div> </div>')
+                    }
+                    //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
+                    //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
+                    next(lis.join(''), page <5); //假设总页数为 10
+                }, 500);
+            }
+        });
+        //图片懒加载
+        flow.lazyimg();
+    });
+</script>
+</body>
+</html>

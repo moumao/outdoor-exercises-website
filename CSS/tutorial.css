@@ -1,0 +1,40 @@
+body{
+    background-color: white;
+}
+/*教程二级界面*/
+.tutorial-small{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    /*   background-color: #0C417E;*/
+    position: relative;
+    margin-bottom:30px;
+}
+.tutorial-small img{
+    width: 100%;
+    display: block;
+}
+.tutorial-row  .column{
+    padding:0 15px;
+}
+.tutorial-title{
+    z-index: 100;
+    line-height: 150px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    transition: all.4s;
+}
+.tutorial-title:hover{
+    background-color: rgba(24,14,8,.5);
+}
+.btn{
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    border: 1px solid #ECECEE;
+}
