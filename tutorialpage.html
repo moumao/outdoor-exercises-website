@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tutorialpage</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/tutorialpage.css">
+    <script src="JS/jquery-3.1.0.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="loader">
+    <div class="loader-content">
+        <img src=images/11.gif alt="Loader" class="loader-loader" />
+    </div>
+</div>
+<section id="header">
+    <header>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-6 column" id="header-l">
+                    <p>欢迎来到Endless</p>
+                    <p>请</p>
+                    <p><a href="#">登陆</a></p>
+                    <p><a href="#">注册</a></p>
+                </div>
+                <div class="col-md-6 column" id="header-r">
+                    <p><a href="#">退出</a></p>
+                    <p><a href="#">用户名</a></p>
+                    <div id="head-pic"><a href="#" ><img alt="" src="images/touxiang.jpg.png" /></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+</section>
+<section>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-2 column">
+                <div class="left">
+                </div>
+            </div>
+            <div class="col-md-8 column">
+                <div class="page">
+                    <div class="title">
+                        <h1>我看过的，最好听的电影</h1>
+                        <div class="author">
+                            <div class="img-box">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 column">
+                <div class="right">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer">
+    <footer>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-6 column" id="footer-l">
+                    <p>版权所有&nbsp;©&nbsp;Endless技术有限公司&nbsp;&nbsp;1998-2016&nbsp;&nbsp;保留一切权利</p>
+                </div>
+                <div class="col-md-6 column" id="footer-r">
+                    <ul>
+                        <li><a href="#">法律声明</a> </li>
+                        <li><a href="#">隐私保护</a> </li>
+                        <li><a href="#">联系我们</a> </li>
+                        <li><a href="#">网站地图</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
+<script type="text/javascript">
+    //载入动画
+    window.onload = function(){
+        setTimeout(function(){
+            var loader = document.getElementsByClassName("loader")[0];
+            loader.className="loader fadeout" ;//使用渐隐的方法淡出loading page
+            $("#header").css({
+                position:"fixed"
+            });
+            setTimeout(function(){
+                loader.style.display="none"
+            },1000)
+        },1000);//强制显示loading page 1s
+    };
+    $(document).ready(function () {
+
+    })
+</script>
+</html>
