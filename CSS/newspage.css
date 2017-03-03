@@ -99,3 +99,84 @@
     background-color: white;
     color: #5474ff;
 }
+.comment{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.comment h4{
+    display: inline-block;
+}
+.textarea-box{
+    width: 100%;
+    height: 170px;
+}
+#message{
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+#textarea-btn{
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+.comment-area{
+    width: 100%;
+    display: block;
+}
+.comment-box{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+.comment-box-img-box{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    border-radius: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+.comment-box-img-box img{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.comment-box p{
+    display: inline-block;
+    margin: 0;
+    line-height: 15px;
+    margin-right: 10px;
+}
+.comment-box p:nth-child(3){
+    color: #9f9f9f;
+}
+.comment-box p:nth-child(5){
+    line-height: 20px;
+    display: inline;
+    font-size: 13px;
+}
+.comment-comment{
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+.comment-comment div{
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+}
+.comment-comment  p{
+    display: inline-block;
+    line-height: 20px;
+    cursor:pointer
+}
+
+.comment-comment  p:nth-child(3){
+    color: black;
+}
+.comment-comment  p:nth-child(2) {
+    margin-right: 0;
+}

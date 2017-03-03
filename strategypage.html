@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>tutorialpage</title>
+    <title>strategypage</title>
     <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/tutorialpage.css">
+    <link rel="stylesheet" href="CSS/strategypage.css">
     <script src="JS/jquery-3.1.0.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>
-    <script src="JS/style.js"></script>
 </head>
 <body>
 <div class="loader">
@@ -38,11 +37,11 @@
 <section>
     <div class="container">
         <div class="row clearfix">
-            <div class="col-md-2 column">
+            <div class="col-md-1 column">
                 <div class="left">
                 </div>
             </div>
-            <div class="col-md-8 column">
+            <div class="col-md-10 column">
                 <div class="page">
                     <div class="title">
                         <h1>我看过的，最好听的电影</h1>
@@ -129,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 column">
+            <div class="col-md-1 column">
                 <div class="right">
                 </div>
             </div>
@@ -158,6 +157,20 @@
 </body>
 <script type="text/javascript">
     //载入动画
-    window.onload=$(document).loadings();
+    window.onload = function(){
+        setTimeout(function(){
+            var loader = document.getElementsByClassName("loader")[0];
+            loader.className="loader fadeout" ;//使用渐隐的方法淡出loading page
+            $("#header").css({
+                position:"fixed"
+            });
+            setTimeout(function(){
+                loader.style.display="none"
+            },1000)
+        },1000);//强制显示loading page 1s
+    };
+    $(document).ready(function () {
+
+    })
 </script>
 </html>
