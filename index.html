@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="Shortcut Icon" href="favicon.ico" >
     <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/jquery.lightbox-0.5.css">
@@ -571,16 +572,17 @@
     </footer>
 </section>
 <script type="text/javascript">
-    //数字转换为百分数的方法
-    Number.prototype.toPercent=function(){
-        return (Math.round(this*100)/100).toFixed(2)+'%';
-    };
-    //导航栏每一栏的类
-    function navs(name,link) {
-        this.name=name;
-        this.link=link;
-    }
+    window.onload=$(document).loadings();
     $(document).ready(function () {
+        //数字转换为百分数的方法
+        Number.prototype.toPercent=function(){
+            return (Math.round(this*100)/100).toFixed(2)+'%';
+        };
+        //导航栏每一栏的类
+        function navs(name,link) {
+            this.name=name;
+            this.link=link;
+        }
 
         //引入lightBox插件
         $(function() {

@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>newspage</title>
+    <link rel="Shortcut Icon" href="favicon.ico" >
     <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/newspage.css">
     <script src="JS/jquery-3.1.0.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/style.js"></script>
 </head>
 <body>
 <div class="loader">
@@ -65,9 +67,9 @@
                         <h4>评论</h4>
                         <br>
                         <div class="textarea-box">
-                            <textarea id="message" name="message" placeholder="请写下你的评论..."></textarea>
+                            <textarea class="message" name="message" placeholder="请写下你的评论..."></textarea>
                         </div>
-                        <button type="button" class="btn btn-default" id="textarea-btn">提交</button>
+                        <button type="button" class="btn btn-default textarea-btn" >提交</button>
                         <div class="comment-area">
                             <div class="comment-box">
                                 <div class="comment-box-img-box">
@@ -81,12 +83,44 @@
                                     记得当时我回到宿舍还炫耀了一把：“今天我见到了某某作家、某某诗人。”心里想着以后好像可以和大神交流了，但事后想起来，真是太年轻，啪啪打脸声还在耳畔，简直就是一个笑话。</p>
                                 <div class="comment-comment">
                                     <div class="comment-like">
-                                        <p>点赞</p>
+                                        <p class="like">点赞</p>
                                         <p>100</p>
                                         <p>喜欢</p>
                                     </div>
                                     <div class="comment-comment-box">
                                         <p>评论</p>
+                                    </div>
+                                </div>
+                                <div class="comment-reply">
+                                    <div class="comment-reply-textarea">
+                                        <div class="textarea-box">
+                                            <textarea  class="message" name="message" placeholder="回复..."></textarea>
+                                            <button type="button" class="btn btn-default reply-textarea-btn" >提交</button>
+                                        </div>
+                                    </div>
+                                    <div class="comment-reply-text">
+                                        <div class="comment-box">
+                                            <div class="comment-box-img-box">
+                                                <img src="images/strategy-head.png">
+                                            </div>
+                                            <p>名字</p>
+                                            <br>
+                                            <p>记得当时我回到宿舍还炫耀了一把：“今天我见到了某某作家、某某诗人。”心里想着以后好像可以和大神交流了，但事后想起来，真是太年轻，啪啪打脸声还在耳畔，简直就是一个笑话。
+                                                记得当时我回到宿舍还炫耀了一把：“今天我见到了某某作家、某某诗人。”心里想着以后好像可以和大神交流了，但事后想起来，真是太年轻，啪啪打脸声还在耳畔，简直就是一个笑话。
+                                                记得当时我回到宿舍还炫耀了一把：“今天我见到了某某作家、某某诗人。”心里想着以后好像可以和大神交流了，但事后想起来，真是太年轻，啪啪打脸声还在耳畔，简直就是一个笑话。</p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-reply-text">
+                                        <div class="comment-box">
+                                            <div class="comment-box-img-box">
+                                                <img src="images/strategy-head.png">
+                                            </div>
+                                            <p>名字</p>
+                                            <br>
+                                            <p>记得当时我回到宿舍还炫耀了一把：“今天我见到了某某作家、某某诗人。”心里想着以后好像可以和大神交流了，但事后想起来，真是太年轻，啪啪打脸声还在耳畔，简直就是一个笑话。
+                                                记得当时我回到宿舍还炫耀了一把：“今天我见到了某某作家、某某诗人。”心里想着以后好像可以和大神交流了，但事后想起来，真是太年轻，啪啪打脸声还在耳畔，简直就是一个笑话。
+                                                记得当时我回到宿舍还炫耀了一把：“今天我见到了某某作家、某某诗人。”心里想着以后好像可以和大神交流了，但事后想起来，真是太年轻，啪啪打脸声还在耳畔，简直就是一个笑话。</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -100,12 +134,32 @@
                                 <p>记得当时我回到宿舍还炫耀了一把：“、某某诗人。”心里</p>
                                 <div class="comment-comment">
                                     <div class="comment-like">
-                                        <p>点赞</p>
+                                        <p class="like">点赞</p>
                                         <p>100</p>
                                         <p>喜欢</p>
                                     </div>
                                     <div class="comment-comment-box">
                                         <p>评论</p>
+                                    </div>
+                                </div>
+                                <div class="comment-reply">
+                                    <div class="comment-reply-textarea">
+                                        <div class="textarea-box">
+                                            <textarea  class="message" name="message" placeholder="回复..."></textarea>
+                                            <button type="button" class="btn btn-default reply-textarea-btn" >提交</button>
+                                        </div>
+                                    </div>
+                                    <div class="comment-reply-text">
+                                        <div class="comment-box">
+                                            <div class="comment-box-img-box">
+                                                <img src="images/strategy-head.png">
+                                            </div>
+                                            <p>名字</p>
+                                            <br>
+                                            <p>记得当时我回到宿舍还炫耀了一把：“今天我见到了某某作家、某某诗人。”心里想着以后好像可以和大神交流了，但事后想起来，真是太年轻，啪啪打脸声还在耳畔，简直就是一个笑话。
+                                                记得当时我回到宿舍还炫耀了一把：“今天我见到了某某作家、某某诗人。”心里想着以后好像可以和大神交流了，但事后想起来，真是太年轻，啪啪打脸声还在耳畔，简直就是一个笑话。
+                                                记得当时我回到宿舍还炫耀了一把：“今天我见到了某某作家、某某诗人。”心里想着以后好像可以和大神交流了，但事后想起来，真是太年轻，啪啪打脸声还在耳畔，简直就是一个笑话。</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -212,20 +266,20 @@
 </body>
 <script type="text/javascript">
     //载入动画
-    window.onload = function(){
-        setTimeout(function(){
-            var loader = document.getElementsByClassName("loader")[0];
-            loader.className="loader fadeout" ;//使用渐隐的方法淡出loading page
-            $("#header").css({
-                position:"fixed"
-            });
-            setTimeout(function(){
-                loader.style.display="none"
-            },1000)
-        },1000);//强制显示loading page 1s
-    };
+    window.onload=$(document).loadings();
     $(document).ready(function () {
-
+        $(".like").click(function () {
+            var rgb=$(this).css('color');
+            var yrgb="rgb(255, 0, 0)";
+            if(yrgb!=rgb){
+                $(this).css('color',yrgb)
+            }else{
+                $(this).css('color','black')
+            }
+        });
+        $(".comment-comment-box").click(function () {
+            $(this).parent().next().find(".comment-reply-textarea").slideToggle();
+        })
     })
 </script>
 </html>

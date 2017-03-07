@@ -101,28 +101,33 @@
 }
 .comment{
     width: 100%;
+    background-color: white;
     margin-top: 50px;
     margin-bottom: 20px;
+    padding: 25px;
 }
 .comment h4{
     display: inline-block;
+    margin: 10px;
 }
 .textarea-box{
     width: 100%;
     height: 170px;
+    padding: 10px;
 }
-#message{
+.message{
     width: 100%;
     height: 150px;
     resize: none;
 }
-#textarea-btn{
+.textarea-btn{
+    margin: 10px;
     border-radius: 0px;
-    margin-bottom: 20px;
 }
 .comment-area{
     width: 100%;
     display: block;
+    padding: 10px;
 }
 .comment-box{
     width: 100%;
@@ -177,6 +182,33 @@
 .comment-comment  p:nth-child(3){
     color: black;
 }
-.comment-comment  p:nth-child(2) {
+.comment-comment  p:nth-child(2){
     margin-right: 0;
+}
+.comment-reply{
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 40px;
+}
+.comment-reply-textarea{
+    width: 100%;
+    display: none;
+}
+.reply-textarea-btn{
+    margin:5px 0 0 0;
+    border-radius: 0;
+    display: block;
+}
+.comment-reply-text{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 40px;
+    padding: 10px;
+    border: 1px solid silver ;
+}
+.comment-reply-text  p{
+    display: inline;
+    line-height: 20px;
+    cursor:pointer
 }
